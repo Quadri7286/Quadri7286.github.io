@@ -1,0 +1,61 @@
+
+li
+{
+    color: deepskyblue;
+}
+body
+{
+    margin-left: 5em;
+    width: 50em;
+    padding: 1em;
+    border: 10em;
+}
+#Abrar {
+    text-shadow: 2px 2px 5px deepskyblue;
+}
+p{
+    font-size: x-large;
+}
+li{
+    font-size: x-large;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+
+    overflow: hidden;
+}
+
+.topnav {
+    font-size: x-large;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: deepskyblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #79ff00;
+    color: black;
+    opacity: 0.6;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: #d18d0d;
+    font-weight: bold;
+}
+h1
+{
+    color: #d18d0d;
+}
+

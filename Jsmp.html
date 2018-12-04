@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Mini Projects</title>
+    <link rel="stylesheet"  href="Jscss.css">
+    <script src="Jsmpjs.js"></script>
+</head>
+
+<body>
+<style>
+    body {
+        background-color: #1F1D1D;
+    }
+</style>
+<p id="Abrar"><font color="#d18d0d" font size="18">
+    Javascript Projects
+</font></p>
+
+<div class="topnav">
+    <a href="index.html">About Me</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="libber.html">Mad Lib</a>
+    <a href="calc.html">Calc</a>
+    <a class="active" href="Jsmp.html">Projects</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Magic.html">MAGIC(Go here last)</a>
+</div>
+<br>
+<hr>
+<h1>Here comes the Javascript Mini Projects</h1>
+<br>
+
+<form name="project3">
+    <h2>Grade Assigner(Because you cant figure this out on your own)</h2>
+    <br><br>
+    Type in the Percentage(without percent):<input name="input1" type="text">
+    <br><br>
+    YOU GOT: <input name="result" type="text" readonly="true" style="border-style: none" size="80">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()"><b><i>GRADE TELLER CUZ EVEYRONE NEEDS THIS!</b></i></button>
+
+</form>
+
+<form name="projectTemp">
+    <h2>SEASON FINDER 9000</h2>
+    <br><br>
+    Type in the temperature:  <input name="num1" type="text">
+    <br><br>
+    The season is: <input name="result" type="text" readonly="true" style="border-style: none" size="100">
+    <br><br>
+    <button type="button" onclick="document.projectTemp.result.value=temperature()"><b><i>SEASON FIGURE OUT THINGY</i></b></button>
+    <br>
+    <img src="pic/square.png" height="680" width="680" id="temp"/>
+</form>
+<br>
+
+
+<form name="projectCal">
+    <h2> CALORIE COUNTER</h2>
+     <h3> Select a activity</h3>
+    <br>
+       <select id="work">
+           <option value="basketball">B to the Ball</option> <!--Credits to Syed/Ali for guidance-->
+           <option value="running">run *insert Inital D*</option>
+           <option value="jogging">jogging "you should all be jogging"</option>
+           <option value="swimming">swimming or running in water</option>
+           <option value="soccer">soccer is soccer</option>
+           <option value="football">football UMREEKA</option>
+           <option value="volleyball">volleyball I CAN ALMOST SPIKE</option>
+           <option value="tennis">tennis ping pong but for active people</option>
+           <option value="badminton">badminton yes hit the bird</option>
+           <option value="bowling">bowling gutter...*10</option>
+           <option value="gaming">gaming you think your gonna burn calories why did I include this</option>
+           <option value="golfing">golfing INTO THE LAKE</option>
+           <option value="biking">biking MAKE THE WORLD A BETTER PLACE PEOPLE NO CARS</option>
+           <option value="kayaking">kayaking row row row your boat</option>
+           <option value="skating">skating which one though</option>
+           <option value="snowboarding">snowboarding Skateboarding but no wheels</option>
+           <option value="rugby">rugby or rigby</option>
+           <option value="baseball">baseball or cricket</option>
+           <option value="lifting">lifting gotta start small</option>
+           <option value="lacrosse">lacrosse lacoste</option>
+           <option value="martial arts">martial arts staring Jackie Chan</option>
+           <option value="parkour">parkour Most of this is just get away videos</option>
+           <option value="hockey">hockey Canada</option>
+           <option value="softball">softball not cricket</option>
+           <option value="gymnastics">gymnastics I think I gonna pull something</option>
+       </select>
+    <br><br>
+    <br><br>
+    Type in the time in min: <input name="input2" type="text" id="tim">
+    <br>
+    <br>
+    <br>
+    CALORIES ROASTED: <input name="result" type="text" readonly="true" style="border-style:none">
+    <br>
+    <br>
+    <button type="button" onclick="document.projectCal.result.value=calories()"><b><i>CALORIE ROASTER</i></b></button>
+
+</form>
+
+<br>
+<br>
+<h1>Binary Projects</h1>
+<hr>
+<br>
+<form name="toBinary">
+    <h2>BASE 10 to whatever you want(B part)</h2>
+    Insert a number you wanna binarify <input type="text" name="input1">
+    <br><br>
+    Insert the base you wanna turn it into <input type="text" name="input2">
+    <br><br>
+    Binarybasified Number: <input name="result" type="text" readonly="true" style="border-style:none">
+    <br><br>
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall()"><b><i>The Journey to unknown base</i></b></button>
+</form>
+<br>
+
+<form name="toBase10">
+    <h2>To Base 10 or What Normal People Read(B part)</h2>
+    Insert the Gibberish Number you got:<input type="text" name="input1">
+    <br><br>
+    Insert the base the gibberish is in:<input type="text" name="input2">
+    <br><br>
+    THE NUMBER YOU GET SSJ:<input name="results" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.toBase10.results.value=smallToTen()"><b><i>TO Base 10 or whatever you read</i></b></button>
+</form>
+<!-- Have input for og number org base and dest base for the A -->
+<form name="toAny">
+    <h2>Binaryfication (A part)</h2>
+    Insert number that you want to convert:<input name="input1" type="text">
+    <br><br>
+    What is the base this number is in: <input name="input2" type="text">
+    <br><br>
+    What base you want to transformer it into: <input name="input3" type="text">
+    <br><br>
+    Binarybasified number: <input name="result" type="text" readonly="true" style="border-style:none">
+    <br><br>
+    <button type="button" onclick="document.toAny.result.value=bin(Number(document.toAny.input1.value)),Number(document.toAny.input3.value)">
+        <b><i>BRILLIANTLY BALLISTIC BUMBLING BINARYFICATION BASER BUTTONER BRINGER (BBBBBBB)</i></b></button>
+</form>
+</html>

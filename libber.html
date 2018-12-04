@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLib FUN</title>
+    <link rel="stylesheet" href="madd.css">
+</head>
+<body>
+<script>
+    function madLib()
+    {
+        var noun = document.story.noun.value;
+        var adj = document.story.adj.value;
+        var v = document.story.v.value;
+        var object = document.story.object.value;
+        var name = document.story.name.value;
+        var wish = document.story.wish.value;
+        var goal = document.story.goal.value;
+        var weakness = document.story.weakness.value;
+        var superpower = document.story.superpower.value;
+        var adj2 = document.story.adj2.value;
+        var v2 = document.story.v2.value;
+        var animal = document.story.animal.value;
+        var num = document.story.num.value;
+        var occ = document.story.occ.value;
+        var v3 = document.story.v3.value;
+        var object2 = document.story.object2.value;
+        var adj3 = document.story.adj3.value;
+        var food = document.story.food.value;
+
+        document.getElementById("lib").innerHTML = occ+animal+num + " is a \n very "+ adj +" thing. He has the power to "
+            + superpower +"! He only has one goal in life and that is to " + goal +". But every now and then "
+            + occ+animal+num + " will " + v + " and think about its wish of "+ wish + ". Everything changed when " + name +
+            " the " + adj2 + " did " + v2 + ". " + name + " had the " + adj2+ " " + object + ". " + occ+animal+num+ " knew "
+            + name+"'s weakness and that was " + weakness + ". " + occ+animal+num+ "  used his "+ superpower +
+            " and combined it with " +weakness + " to " + v3 + " " + name + ". After " + occ+animal+num+ " did "+ v3 +
+            " to " + name + ", he had his wish come true. He finally " + wish + "! BUt in the end a " + object2 +
+            " ended everything with a " + adj3 + " " + noun +". " +occ+animal+num+"'s last words were, I am " + occ+animal+num+
+            " you are not " + occ+animal+num+ " I look like "+ occ+animal+num+ " I am " +occ+animal+num + " as he ate " +
+            food
+    }
+</script>
+
+</head>
+<body>
+<style>
+    body {
+        background-color: #1F1D1D;
+    }
+</style>
+<p id="Abrar"><font color="#d18d0d" font size="18">
+    Mad Lib Funnn
+</font></p>
+
+<div class="topnav">
+    <a href="index.html">About Me</a>
+    <a href="quiz.html">Quiz</a>
+    <a class="active" href="libber.html">Mad Lib</a>
+    <a href="calc.html">Calc</a>
+    <a href="Jsmp.html">Projects</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Magic.html">MAGIC(Go here last)</a>
+</div>
+<br>
+<hr>
+
+<h1>Now Go Mad Lib</h1>
+<h1>Key</h1>
+<p><font color="#d18d0d">adj = adjective<br>
+    v = verb<br>
+    num = number<br>
+    occ = occupation<br>
+</font></p>
+<form name="story">
+    noun:<input name="noun" type="text">
+
+    adj:<input name="adj" type="text">
+    <br><br>
+    v:<input name="v" type="text">
+
+    object:<input name="object" type="text">
+    <br><br>
+    name:<input name="name" type="text">
+
+    wish:<input name="wish" type="text">
+    <br><br>
+    goal:<input name="goal" type="text">
+
+    weakness:<input name="weakness" type="text">
+    <br><br>
+    superpower:<input name="superpower" type="text">
+
+    adj2:<input name="adj2" type="text">
+    <br><br>
+    v2:<input name="v2" type="text">
+
+    animal:<input name="animal" type="text">
+    <br><br>
+    num:<input name="num" type="text">
+
+    occ:<input name="occ" type="text">
+    <br><br>
+
+    v3:<input name="v3" type="text">
+
+    object2:<input name="object2" type="text">
+    <br><br>
+    adj3:<input name="adj3" type="text">
+
+    food:<input name="food" type="text">
+    <br><br>
+
+    <button type="button" onclick="document.story.result.value=madLib()">madlibbify</button>
+    <br><br>
+    <p id="lib">
+        The Story starts here
+    </p>
+</form>
+</body>
+</html>
